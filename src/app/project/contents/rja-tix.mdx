@@ -1,0 +1,113 @@
+---
+title: "RJA.TIX"
+publishedAt: "2024-11-27"
+description: "A cinema ticketing management platform."
+techs: ["nextjs", "expressjs", "tailwindcss", "prisma"]
+banner: "https://res.cloudinary.com/dbu0u9bln/image/upload/v1733132913/rja-tix-1_wq69e7.jpg"
+github: "https://github.com/arnoldusmeidio/RJA-TIX"
+link: "https://rjatix.xyz"
+---
+
+> ## Short Explanation
+
+RJA.TIX is a cinema ticketing management platform designed to streamline movie ticket sales and enhance the experience for both cinema operators and moviegoers. The platform allows cinema operators to manage movie schedules, ticket pricing, and seating arrangements while enabling moviegoers to browse showtimes, book tickets, and leave reviews for movies and cinemas.
+
+> ## Project Goals
+
+The goal of RJA.TIX is to provide a seamless platform for cinema operators and moviegoers, focusing on user convenience and efficient management of movie schedules and ticket sales. The platform’s key features include:
+
+- **Authentication and Authorization**: Separate roles for cinema operators and moviegoers, with protected routes.
+- **Movie Discovery**: A responsive landing page with search, filters, and pagination for browsing movies.
+- **Booking Management**: Secure ticket booking with dynamic seat selection and pricing.
+- **Referral Program**: Users earn points and discounts for referrals, enhancing engagement.
+- **Cinema Reviews**: Users can leave reviews and ratings for movies and cinemas.
+- **Operator Dashboard**: Cinema operators manage schedules, transactions, and statistics through visual reports.
+
+<blockquote>
+  ## Tech Stack Used
+  <div className="-ml-5">
+    <TechIcons
+      className={"no-disc gap-4"}
+      techs={["nextjs", "expressjs", "tailwindcss", "prisma"]}
+    />
+  </div>
+</blockquote>
+
+The RJA.TIX project utilizes a modern and scalable tech stack:
+
+- **Next.js**: Facilitates fast and SEO-friendly movie browsing with server-side rendering (SSR) and static generation (SSG).
+- **Express.js**: Manages backend operations, including user authentication, movie schedule APIs, and ticket bookings.
+- **TailwindCSS**: Enables consistent and responsive UI design for a seamless user experience
+- **MySQL**: Provides a reliable database for managing movies, schedules, and ticket transactions.
+- **Prisma ORM**: Simplifies database queries and ensures type-safe, efficient interaction with structured data.
+
+> ## Screenshots
+
+<SplitImage>
+  <Split>
+    <Image
+      src="https://res.cloudinary.com/dbu0u9bln/image/upload/v1733421025/rja-tix-2_an2eil.jpg"
+      alt="ss1"
+      width={800}
+      height={400}
+    />
+    <Image
+      src="https://res.cloudinary.com/dbu0u9bln/image/upload/v1733421026/rja-tix-3_xtrnb5.jpg"
+      alt="ss2"
+      width={800}
+      height={400}
+    />
+    <Image
+      src="https://res.cloudinary.com/dbu0u9bln/image/upload/v1733421027/rja-tix-4_rwf3u4.jpg"
+      alt="ss3"
+      width={800}
+      height={400}
+    />
+  </Split>
+  <Split>
+    <Image
+      src="https://res.cloudinary.com/dbu0u9bln/image/upload/v1733421028/rja-tix-5_esfwic.jpg"
+      alt="ss4"
+      width={800}
+      height={400}
+    />
+    <Image
+      src="https://res.cloudinary.com/dbu0u9bln/image/upload/v1733421029/rja-tix-6_fixq1b.jpg"
+      alt="ss5"
+      width={800}
+      height={400}
+    />
+    <Image
+      src="https://res.cloudinary.com/dbu0u9bln/image/upload/v1733421030/rja-tix-7_oe1wye.jpg"
+      alt="ss6"
+      width={800}
+      height={400}
+    />
+  </Split>
+</SplitImage>
+
+> ## Worth to Note
+
+### First Collaborative Project
+
+RJA.TIX was my first collaborative project, developed with two classmates at Purwadhika Digital Technology School. My role was as a full-stack developer, though I primarily focused on backend logic. My responsibilities included building APIs for movie scheduling, ticket booking, and referral programs.
+
+This project also introduced me to Git workflows, which was a critical learning experience. I became familiar with branching, merging, and pull request best practices, which improved team collaboration and code management. This foundation in Git workflow will be invaluable for future projects.
+
+> ## Challenges and Solutions
+
+### Implementing Dynamic Seat Selection
+
+One of the challenges was ensuring that users could only book available seats, especially during high-demand periods. I implemented real-time seat availability tracking using SQL transactions to ensure data consistency across simultaneous bookings.
+
+### Creating an Engaging Referral System
+
+Incorporating a referral system with point expiry required careful planning. I implemented automated processes to expire points after three months and ensured accurate tracking of discounts for referred users.
+
+### Optimizing Search Performance
+
+Handling large datasets for movies and showtimes made optimizing the search bar essential. By implementing debounce, I reduced unnecessary API calls and enhanced performance for users.
+
+> ## Lesson Learned
+
+The RJA.TIX project was an exciting journey into building a cinema ticketing platform that balances user experience and operational efficiency. From managing dynamic features like seat selection and ticket pricing to implementing a rewards system, this project expanded my understanding of full-stack development and real-world application design. It also reinforced the importance of scalability, reliability, and delivering a polished user experience.

@@ -1,0 +1,135 @@
+---
+title: "OASIS"
+publishedAt: "2024-11-29"
+description: "A property booking and listing platform."
+techs: ["nextjs", "expressjs", "tailwindcss", "prisma"]
+banner: "https://res.cloudinary.com/dbu0u9bln/image/upload/v1733132916/oasis-1_k2op9q.jpg"
+github: "https://github.com/arnoldusmeidio/OASIS"
+link: "https://oasis-resort.xyz"
+---
+
+> ## Short Explanation
+
+OASIS is a property booking and listing platform designed to connect property owners and users looking for accommodations. The platform allows property owners to list their properties, and manage bookings, while users can search for accommodations, filter results based on preferences, and make secure bookings.
+
+> ## Project Goals
+
+The objective of OASIS is to provide a seamless platform for property owners to list their properties and manage bookings while enabling users to search, book, and pay for accommodations with ease. The platform aims to enhance the user experience through features like:
+
+- **Authentication**: Separate registration and login for Users and Property Owners, with social login options.
+- **Property Browsing**: Users can search accommodations by destination and availability dates, with sorting by price (low-high or high-low) and filters.
+- **Booking Comparison**: Users can compare accommodation availability and prices across different dates.
+- **Real-Time Availability**: Properties unavailable on selected dates are clearly marked.
+- **Dynamic Pricing**: Property Owners can adjust accommodation prices by specific dates or during peak seasons.
+- **Property Management**: Property Owners can manage multiple properties.
+- **Review System**: Users can leave reviews after completing their stay.
+- **Internationalization**: Supports English and Bahasa Indonesia with dynamic language switching and full text translation.
+- **Currency Conversion**: Displays prices in IDR or USD with real-time conversion.
+- **Referral Program**: Users get unique referral codes to share and earn rewards.
+- **Digital Wallet**: Store credits, view transaction history, and use split payments combining wallet, points, and other methods.
+- **Geolocation Search**: Find properties near users location.
+
+<blockquote>
+  ## Tech Stack Used
+  <div className="-ml-5">
+    <TechIcons
+      className={"no-disc gap-4"}
+      techs={["nextjs", "expressjs", "tailwindcss", "prisma"]}
+    />
+  </div>
+</blockquote>
+
+The OASIS project’s stack — Next.js, Express.js, TailwindCSS, MySQL, and Prisma ORM — was chosen for its balance of performance, scalability, and efficiency.
+
+Next.js enables SEO-friendly, dynamic, and fast-loading pages through SSR and SSG, crucial for property listings and search features. It also simplifies localization, enhancing the platform’s multi-language support. Express.js handles backend operations like authentication, authorization, and APIs, ensuring smooth communication between users and the platform. TailwindCSS speeds up development with its utility-first styling, allowing for responsive, mobile-first designs that offer a modern and consistent UI. MySQL provides a robust relational database for managing structured data like properties, bookings, and reviews, while Prisma ORM streamlines database interaction with its type-safe API and schema management tools.
+
+This stack ensures OASIS is fast, user-friendly, and scalable, meeting both user needs and technical requirements efficiently.
+
+> ## Screenshots
+
+<SplitImage>
+  <Split>
+    <Image
+      src="https://res.cloudinary.com/dbu0u9bln/image/upload/v1733132942/oasis-long_teimpe.png"
+      alt="ss1"
+      width={800}
+      height={1200}
+    />
+  </Split>
+  <Split>
+    <Image
+      src="https://res.cloudinary.com/dbu0u9bln/image/upload/v1733132913/oasis-7_smxirh.jpg"
+      alt="ss2"
+      width={800}
+      height={400}
+    />
+    <Image
+      src="https://res.cloudinary.com/dbu0u9bln/image/upload/v1733132914/oasis-6_ftutsp.jpg"
+      alt="ss3"
+      width={800}
+      height={400}
+    />
+    <Image
+      src="https://res.cloudinary.com/dbu0u9bln/image/upload/v1733132912/oasis-4_r4bajd.jpg"
+      alt="ss4"
+      width={800}
+      height={400}
+    />
+  </Split>
+</SplitImage>
+
+> ## Worth to Note
+
+### Collaborative Project
+
+In the OASIS project, I collaborated with two classmates from Purwadhika Digital Technology School, taking on the role of team leader and full-stack developer. As the team leader, I coordinated development efforts, ensured smooth communication, and maintained project timelines. My technical contributions included implementing authentication and authorization systems, integrating dynamic currency conversion based on user preferences, and enabling multi-language localization using next-intl for a seamless user experience. Additionally, I developed key features such as the booking workflow and advanced property search functionality with filters, ensuring the application met user needs effectively.
+
+### Learning Experience: Currency Conversion and Localization
+
+Working on the OASIS project gave me the opportunity to implementing currency conversion and localization, which were both new to me at the time. For currency conversion, I integrated a real-time API to dynamically convert prices based on the user’s selected currency while ensuring that transactions continued in the default currency (IDR) for accuracy and consistency. This experience enhanced my understanding of API integration and handling currency formats effectively across different regions.
+
+For localization, I learned to use the next-intl library to provide seamless multi-language support. I implemented dynamic language switching and ensured that all static and dynamic content, including error messages and validation, were translatable. This deepened my knowledge of internationalization best practices and improved my attention to detail when designing user-friendly global applications. Both features were instrumental in making OASIS accessible and user-centric.
+
+> ## Challenges and Solutions
+
+### Learning New Concepts: Currency Conversion and Localization
+
+One of the challenges in building OASIS was implementing currency conversion and localization. These features required understanding external APIs for real-time currency exchange rates and integrating dynamic language switching using next-intl. Initially, I struggled with grasping how to fetch and display exchange rates efficiently and dynamically translate both static and dynamic content. To overcome this, I dedicated time to reading API documentation, experimenting with examples, and troubleshooting issues through extensive online research and trial-and-error. This process improved my ability to learn and implement complex features independently.
+
+**- Solution:**
+
+I carefully integrated the FreeCurrencyAPI for currency conversion and next-intl for language localization, ensuring seamless user experience and accurate data representation. This experience strengthened my problem-solving skills and ability to work with external libraries and APIs.
+
+### Deploying OASIS to AWS with Limited Resources
+
+Deploying the OASIS project on AWS introduced its own set of challenges. The AWS free-tier EC2 instance had limited processing power, making it unsuitable for building the Next.js application directly on the server. I needed a way to offload the build process to avoid overloading the server.
+
+**- Solution:**
+
+I implemented a CI/CD pipeline using GitHub Actions. This setup allowed the project to be built on GitHub's servers, after which the built files were securely copied to the AWS EC2 instance. This approach ensured smooth deployment while optimizing server performance and avoiding unnecessary delays. This experience taught me the importance of resource management and the power of automation tools like GitHub Actions in real-world deployment scenarios.
+
+> ## Lesson Learned
+
+The OASIS project was a valuable learning experience that helped me grow both technically and professionally. Some of the key takeaways include:
+
+### Mastering New Technologies
+
+Integrating currency conversion and localization required in-depth research and hands-on experimentation with APIs and libraries like FreeCurrencyAPI and next-intl. This taught me the importance of patience and perseverance when learning new tools.
+
+### Building Scalable Features
+
+Implementing dynamic features like currency conversion and language localization reinforced the need for scalability. I learned how to structure code efficiently and ensure that the system could easily be extended to support more languages or currencies in the future.
+
+### Continuous Integration & Deployment (CI/CD)
+
+The deployment process to AWS and setting up GitHub Actions were eye-opening. It taught me how to automate workflows and manage deployments outside of the server, which is essential for scalable, production-ready applications.
+
+### Collaboration & Problem Solving
+
+Working on OASIS with classmates helped me develop better collaboration skills. Tackling technical challenges together, such as handling deployment issues and debugging, showed me how important teamwork is in overcoming obstacles.
+
+### Attention to User Experience
+
+Focusing on creating a smooth, user-friendly experience in the platform—from browsing properties to making bookings and handling payments—reinforced the importance of putting users at the center of every feature.
+
+The OASIS project has been a crucial step in my journey to becoming a full-stack web developer, expanding my skills in various aspects of software development.

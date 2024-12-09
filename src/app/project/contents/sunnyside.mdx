@@ -1,0 +1,121 @@
+---
+title: "Sunnyside"
+publishedAt: "2024-11-20"
+description: "A company profile website for a creative agency."
+techs: ["nextjs", "tailwindcss"]
+banner: "https://res.cloudinary.com/dbu0u9bln/image/upload/v1733132920/sunnyside-1_emd1vj.jpg"
+github: "https://github.com/arnoldusmeidio/SunnySide"
+link: "https://code-challenge-2-purwadhika-sunnyside.vercel.app/"
+---
+
+> ## Short Explanation
+
+Sunnyside is a company profile website created as part of a code challenge at Purwadhika Digital Technology School, where I completed a full-stack web development course. The challenge required building a multi-page website for a creative agency, adhering to Core Web Vitals metrics for performance. Sunnyside features a responsive design and provides an overview of the company, its team, and services, with data dynamically fetched for team members. This project helped solidify my front-end development skills and improve my understanding of performance optimization.
+
+> ## Project Goals
+
+The primary goal of Sunnyside was to create a visually appealing and highly performant website that communicates the company’s mission, values, and services effectively. Key objectives included:
+
+- Developing an engaging Homepage with a hero banner, testimonials, and company highlights.
+- Creating an About Us page that showcases the company’s history, culture, and team.
+- Designing a Services page with clear descriptions and calls to action.
+- Implementing a dynamic Teams page by fetching team member data from an external API.
+- Optimizing the website's performance based on Core Web Vitals using PageSpeed Insights.
+
+<blockquote>
+  ## Tech Stack Used
+  <div className="-ml-5">
+    <TechIcons className={"no-disc gap-4"} techs={["nextjs", "tailwindcss"]} />
+  </div>
+</blockquote>
+
+Next.js and TailwindCSS were the technologies chosen for developing the Sunnyside company profile website, ensuring a balance between performance, modern design, and development speed.
+
+- Next.js provided server-side rendering (SSR) and static site generation (SSG), which were crucial for optimizing the site’s Core Web Vitals metrics. These features improved the website’s Largest Contentful Paint (LCP) and First Input Delay (FID) scores, ensuring fast loading times and a responsive user experience. Next.js also simplified the routing structure, making it easier to manage the multi-page setup (Home, About Us, Services, Teams).
+
+- TailwindCSS offered a utility-first CSS framework, enabling rapid prototyping and consistent design implementation. Its small CSS bundle size ensured minimal Cumulative Layout Shift (CLS) by providing precise control over layout and spacing, eliminating unexpected shifts during page rendering.
+
+This combination of technologies ensured that Sunnyside met both functional and performance requirements, delivering an engaging and smooth user experience.
+
+> ## Screenshots
+
+<SplitImage>
+  <Split>
+    <Image
+      src="https://res.cloudinary.com/dbu0u9bln/image/upload/v1733132926/sunnyside-long_trwipc.png"
+      alt="ss1"
+      width={800}
+      height={2160}
+    />
+  </Split>
+  <Split>
+    <Image
+      src="https://res.cloudinary.com/dbu0u9bln/image/upload/v1733132917/sunnyside-2_xrscmr.jpg"
+      alt="ss2"
+      width={800}
+      height={400}
+    />
+    <Image
+      src="https://res.cloudinary.com/dbu0u9bln/image/upload/v1733132925/sunnyside-3_ti109a.jpg"
+      alt="ss3"
+      width={800}
+      height={400}
+    />
+    <Image
+      src="https://res.cloudinary.com/dbu0u9bln/image/upload/v1733132922/sunnyside-4_aumqes.jpg"
+      alt="ss4"
+      width={800}
+      height={400}
+    />
+    <Image
+      src="https://res.cloudinary.com/dbu0u9bln/image/upload/v1733419771/sunnyside-6_j5p3bg.jpg"
+      alt="ss5"
+      width={800}
+      height={400}
+    />
+    <Image
+      src="https://res.cloudinary.com/dbu0u9bln/image/upload/v1733132918/sunnyside-5_m331ol.jpg"
+      alt="ss6"
+      width={800}
+      height={400}
+    />
+  </Split>
+</SplitImage>
+
+> ## Worth to Note
+
+### Real-World Use Case Implementation
+
+The Sunnyside project demonstrated the ability to build a real-world company profile website. It required balancing design aesthetics with performance optimization to achieve a high Core Web Vitals score.
+
+### First Use of Core Web Vitals Metrics
+
+This project was my first exposure to Core Web Vitals, which provided insights into website performance and user experience. By addressing metrics such as LCP, FID, and CLS, I learned how to optimize loading times, improve interactivity, and minimize layout shifts effectively.
+
+### Fetching and Rendering External Data
+
+For the Teams Page, I integrated an external API, Random User API, to dynamically fetch and display team member information. This implementation demonstrated my ability to work with APIs and render data seamlessly.
+
+> ## Challenges and Solutions
+
+### Balancing Design and Performance
+
+Creating a visually appealing website while maintaining high performance scores on PageSpeed Insights. I optimized images using responsive formats, and used TailwindCSS to implement lightweight, responsive designs.
+
+### Fetching Team Data from an API
+
+The challenge was dynamically rendering team member data using the Random User API while ensuring performance and responsiveness, which I addressed by fetching the data using React's fetch, managing the API response with efficient state handling, and styling the output to align with the overall design aesthetics.
+
+> ## Lesson Learned
+
+### 1. Optimizing for Core Web Vitals
+
+This project introduced me to performance optimization techniques, enhancing my ability to create websites that not only look good but also load quickly and provide a smooth user experience.
+
+### 2. Practical API Integration
+
+Implementing the Teams Page helped me strengthen my understanding of API integration and dynamic rendering in React.
+
+### 3. Focus on User Experience
+
+Designing Sunnyside required a balance between aesthetics and usability. This project reinforced the importance of creating user-centric interfaces that are both functional and engaging.
