@@ -89,7 +89,7 @@ export default function Hero() {
               </p>
               <p className="max-lg:hidden">
                 In addition to my technical background, I bring a unique
-                perspective from my 8 years of experience as a civil engineer,
+                perspective from my years of experience as a civil engineer,
                 where I honed{" "}
                 <RoughNotation
                   type="box"
@@ -139,7 +139,7 @@ export default function Hero() {
             </Link>
             <Link
               href={
-                "https://drive.google.com/file/d/1AF2Ar5e0h4CB9zDP0euv9O8MB50Eeyn2/view?usp=drive_link"
+                "https://drive.google.com/file/d/14Kgo75OpEtP6PaPVXbN_HzacxbCGbreg/view?usp=sharing"
               }
               target="_blank"
             >
